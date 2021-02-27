@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"></head>
+<body>
+  <div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+    <div class="box8">8</div>
+    <div class="box9">9</div>
+  </div>
+</body>
+<style>
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-template-areas:
+    "s s s . . v z z z"
+    "r r q y y v z z z"
+    "c c q y y g z z z"
+    "c c q y y b b b b";
+
+}
+
+.box3 {
+  background: hsl(0, 76%, 35%);
+  grid-area: r;
+}
+
+.box2 {
+  background: hsl(60, 60%, 60%);
+  grid-area: y;
+}
+
+.box1 {
+  background: hsl(120, 60%, 60%);
+  grid-area: g;
+}
+
+.box7 {
+  background: hsl(110, 70%, 26%);
+  grid-area: c;
+}
+
+.box5 {
+  background: hsl(240, 58%, 50%);
+  grid-area: b;
+}
+.box6 {
+  background: hsl(342, 80%, 71%);
+  grid-area: q;
+}
+
+.box4 {
+  background: hsl(36, 86%, 42%);
+  grid-area: s;
+}
+
+.box8 {
+  background: hsl(209, 88%, 68%);
+  grid-area: v;
+}
+
+.box9 {
+  background: hsl(240, 2%, 10%);
+  grid-area: z;
+}
+
+</style>
+</html>
